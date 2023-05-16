@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import Home from './pages/Home'
+import Popular from './pages/Popular';
+import TopRated from './pages/TopRated';
+import Upcoming from './pages/Upcoming';
+import Header from './components/Header';
+import MovieDetail from './pages/MovieDetail';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <Router>
+    <Header />
+    <Routes>
+      <Route path="/" element={<Home />}>
+      </Route>
+      <Route path='/movie/:id' element={<MovieDetail />}></Route>
+      <Route path='/cineFlix/popular' element={<Popular />}></Route>
+      <Route path='/cineFlix/topRated' element={<TopRated />}></Route>
+      <Route path='/cineFlix/upcoming' element={<Upcoming />}></Route>
+    </Routes>
+   </Router>
+   </>
   );
 }
 

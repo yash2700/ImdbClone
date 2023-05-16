@@ -1,0 +1,103 @@
+.movie{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+.backdrop {
+    margin: auto;
+    width: 100%;
+    max-height: 600px; /* Adjust the desired maximum height */
+    overflow: hidden;
+  }
+  
+  .backdrop > img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .left > img{
+    height: 400px;
+    width: 266px;
+    object-fit: contain;
+    object-position: center;
+    object-position: center;
+    border-radius: 10px !important;
+    margin: 0;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .movie_genre{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 0.8rem;
+  }
+  .movie_genres{
+    gap: 1rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .movie_detail{
+    display: flex;
+    position: absolute;
+    top: 65%;
+    gap: 2rem;
+    margin: auto;
+    width: 90%;
+    left: 5%;
+  }
+  .movie_rating{
+    display: flex;
+    gap: 1rem;
+  }
+  h1{
+    font-size: 2rem;
+    margin: 0;
+  }
+  .top{
+    display: flex;
+    flex-direction: column;
+  }
+  .tagline,.movie_rating,.movie_runtime,.movie_releaseDate{
+    margin-bottom: 0.3rem;
+  }
+  .links{
+    position: relative;
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .links > h1{
+    font-weight: 500;
+  }
+  p{
+    display: flex;
+    gap: 1rem;
+    background-color: red;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+  }
+  .imd{
+    background-color: #FEBE15;
+    color: black;
+  }
+  .production h1{
+    text-align: center;
+    margin: 1rem;
+  }
+  .productionImage{
+    width: 150px;
+    background-color: white;
+
+  }
+  .prodimages{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
+  

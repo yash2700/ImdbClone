@@ -1,0 +1,54 @@
+.cards {
+    height: 300px;
+    max-width: 200px;
+    position: relative;
+    /* overflow: hidden; */
+    transition: transform .2s ease-in;
+    display: inline-block;
+    border: 1px solid rgb(81, 80, 80);
+    border-radius: 10px;
+}
+  
+img{
+    width: 100%;
+}
+  img:hover {
+    transform: none;
+}
+  
+  .cards:hover {
+    transform: scale(1.2);
+}
+  
+  
+  .cards_overlay {
+    padding: 1rem 1rem 1rem 0;
+    position: absolute;
+    opacity: 0;
+    top: 36%;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    width: 190px;
+    left: 5%;
+    height: 50%;
+    transition: opacity 0.2s; /* Add opacity transition */
+}
+  
+  .cards:hover .cards_overlay {
+    opacity: 1; /* Show cards_overlay on hover */
+}
+  
+  .cards_description {
+    font-size: 0.8rem;
+}
+  
+  .cards_runtime {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+  
